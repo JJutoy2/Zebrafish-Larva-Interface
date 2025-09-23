@@ -69,7 +69,7 @@ class RotatingArcs(Animation):
     def __init__(self, 
                  num_arcs=4, 
                  speed_deg_s=60, 
-                 speed_dt=10,
+                 speed_dt=1,
                  fg=(255,255,255), 
                  bg=(0,0,0)
                  ):
@@ -132,6 +132,6 @@ class RotatingArcs(Animation):
                     self.num_arcs = max(2, self.num_arcs - 1)
                     self.arcs_image = self.create_arcs_image()
                 case pygame.K_1:
-                    self.speed = -60
+                    self.speed = -10
                 case pygame.K_2:
-                    self.speed = 60
+                    self.speed = 10
